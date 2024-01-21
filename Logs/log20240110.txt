@@ -1,0 +1,169 @@
+09:55:40 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+09:55:41 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+09:55:41 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+09:55:41 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+09:55:41 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+09:55:41 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+09:55:42 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+09:55:43 [INF] [LAPTOP-H914ANHF#7 ] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 832.3419ms
+09:55:43 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+09:55:43 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13751 application/javascript;+charset=utf-8 13.8358ms
+09:55:43 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+09:55:44 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 183.4106ms
+09:55:44 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+09:55:45 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 910.9867ms
+09:55:46 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+09:55:47 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 261.2073ms
+09:55:48 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/favicon.ico - -
+09:55:48 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] No cached response available for this request.
+09:55:49 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] The response could not be cached for this request.
+09:55:49 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/favicon.ico - - - 404 0 - 1565.1202ms
+10:01:34 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+10:01:35 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+10:01:35 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+10:01:35 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+10:01:35 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+10:01:35 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+10:01:36 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+10:01:37 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 714.0320ms
+10:01:37 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+10:01:37 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13751 application/javascript;+charset=utf-8 31.5634ms
+10:01:37 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+10:01:37 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 293.2478ms
+10:01:38 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+10:01:39 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1003.6811ms
+11:03:56 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+11:03:57 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+11:03:57 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+11:03:57 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+11:03:57 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+11:03:57 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+11:03:58 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+11:03:59 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 1003.3831ms
+11:03:59 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+11:03:59 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13751 application/javascript;+charset=utf-8 18.1954ms
+11:03:59 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+11:03:59 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 183.1960ms
+11:04:00 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+11:04:01 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 931.5382ms
+11:12:02 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+11:12:02 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+11:12:02 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+11:12:02 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+11:12:02 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+11:12:02 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+11:12:05 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+11:12:05 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+11:12:05 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 710.8709ms
+11:12:05 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13751 application/javascript;+charset=utf-8 44.7592ms
+11:12:05 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+11:12:06 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 239.2372ms
+11:12:06 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+11:12:07 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 877.2032ms
+15:22:11 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+15:22:11 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+15:22:11 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+15:22:11 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+15:22:11 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+15:22:11 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+15:22:12 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+15:22:13 [INF] [LAPTOP-H914ANHF#8 ] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 808.1666ms
+15:22:13 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+15:22:13 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13751 application/javascript;+charset=utf-8 74.0906ms
+15:22:13 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+15:22:14 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 217.2858ms
+15:22:14 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+15:22:14 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/favicon-32x32.png - -
+15:22:14 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+15:22:14 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/favicon-32x32.png - - - 200 628 image/png 82.2397ms
+15:22:15 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1146.7764ms
+15:23:42 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+15:23:42 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+15:23:42 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+15:23:42 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+15:23:42 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+15:23:42 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+15:23:44 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+15:23:45 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+15:23:45 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 632.0247ms
+15:23:45 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13751 application/javascript;+charset=utf-8 42.8610ms
+15:23:45 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+15:23:46 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 208.8882ms
+15:23:46 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+15:23:47 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 870.8934ms
+15:26:01 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+15:26:01 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+15:26:01 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+15:26:01 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+15:26:01 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+15:26:01 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+15:26:04 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+15:26:04 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 728.8594ms
+15:26:04 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+15:26:04 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13751 application/javascript;+charset=utf-8 12.8986ms
+15:26:04 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+15:26:05 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 214.9417ms
+15:26:05 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+15:26:06 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 917.5551ms
+15:43:42 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+15:43:43 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+15:43:43 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+15:43:43 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+15:43:43 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+15:43:43 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+15:43:46 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+15:43:46 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 680.8582ms
+15:43:46 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+15:43:47 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13751 application/javascript;+charset=utf-8 22.6106ms
+15:43:47 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+15:43:47 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 217.2423ms
+15:43:47 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+15:43:48 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 946.1415ms
+16:08:04 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+16:08:05 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+16:08:05 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+16:08:05 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+16:08:05 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+16:08:05 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+16:08:06 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+16:08:06 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 822.0357ms
+16:08:06 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+16:08:07 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13751 application/javascript;+charset=utf-8 29.3495ms
+16:08:07 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+16:08:07 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 318.1636ms
+16:08:07 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+16:08:08 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1019.6454ms
+16:08:29 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+16:08:29 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 320.9640ms
+16:11:45 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+16:11:46 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+16:11:46 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+16:11:46 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+16:11:46 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+16:11:46 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+16:11:49 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+16:11:50 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 861.5317ms
+16:11:50 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+16:11:50 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13751 application/javascript;+charset=utf-8 24.6246ms
+16:11:50 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+16:11:50 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 214.5522ms
+16:11:50 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+16:11:51 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 801.3781ms
+16:11:58 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+16:11:58 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 232.7719ms
+16:54:20 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+16:54:21 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+16:54:21 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+16:54:21 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+16:54:21 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+16:54:21 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+16:54:23 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+16:54:24 [INF] [LAPTOP-H914ANHF#14 ] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 1205.6554ms
+16:54:24 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+16:54:24 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13751 application/javascript;+charset=utf-8 40.6386ms
+16:54:25 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+16:54:25 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 224.6870ms
+16:54:25 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+16:54:26 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 915.5824ms
+16:55:13 [INF] [LAPTOP-H914ANHF#19 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+16:55:13 [INF] [LAPTOP-H914ANHF#7 ] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 195.8445ms

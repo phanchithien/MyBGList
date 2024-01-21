@@ -1,0 +1,2 @@
+obj\Release\net6.0\win-x64\gRPC/Grpc.cs \
+obj\Release\net6.0\win-x64\gRPC/GrpcGrpc.cs: gRPC/grpc.proto

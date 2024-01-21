@@ -1,0 +1,189 @@
+09:07:47 [INF] [LAPTOP-H914ANHF#1] Now listening on: https://localhost:55221
+09:07:47 [INF] [LAPTOP-H914ANHF#1] Now listening on: http://localhost:55222
+09:07:47 [INF] [LAPTOP-H914ANHF#1] Application started. Press Ctrl+C to shut down.
+09:07:47 [INF] [LAPTOP-H914ANHF#1] Hosting environment: Development
+09:07:47 [INF] [LAPTOP-H914ANHF#1] Content root path: D:\My-repo\MyBGList\MyBGList\
+09:07:52 [INF] [LAPTOP-H914ANHF#6] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+09:07:55 [INF] [LAPTOP-H914ANHF#7] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 3250.1925ms
+09:07:55 [INF] [LAPTOP-H914ANHF#15] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+09:07:55 [INF] [LAPTOP-H914ANHF#15] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 16.6009ms
+09:07:55 [INF] [LAPTOP-H914ANHF#10] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+09:07:55 [INF] [LAPTOP-H914ANHF#15] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 190.7176ms
+09:07:55 [INF] [LAPTOP-H914ANHF#15] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+09:07:56 [INF] [LAPTOP-H914ANHF#15] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 732.8916ms
+09:08:02 [INF] [LAPTOP-H914ANHF#10] Request starting HTTP/2 GET https://localhost:55221/boardgames - -
+09:08:02 [INF] [LAPTOP-H914ANHF#4] Executing endpoint 'MyBGList.Controllers.BoardGamesController.Get (MyBGList)'
+09:08:03 [INF] [LAPTOP-H914ANHF#4] Route matched with {action = "Get", controller = "BoardGames"}. Executing controller action with signature System.Threading.Tasks.Task`1[MyBGList.DTO.RestDTO`1[MyBGList.Models.BoardGame[]]] Get(MyBGList.DTO.RequestDTO`1[MyBGList.DTO.BoardGameDTO]) on controller MyBGList.Controllers.BoardGamesController (MyBGList).
+09:08:04 [INF] [LAPTOP-H914ANHF#4] Get method started.
+09:08:06 [INF] [LAPTOP-H914ANHF#4] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+09:08:07 [INF] [LAPTOP-H914ANHF#6] Executed DbCommand (85ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BoardGames] AS [b]
+09:08:15 [INF] [LAPTOP-H914ANHF#6] Executed DbCommand (106ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BGGRank], [b].[ComplexityAverage], [b].[CreatedDate], [b].[LastModifiedDate], [b].[MaxPlayers], [b].[MinAge], [b].[MinPlayers], [b].[Name], [b].[OwnedUsers], [b].[PlayTime], [b].[RatingAverage], [b].[UsersRated], [b].[Year]
+FROM [BoardGames] AS [b]
+ORDER BY [b].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+09:08:15 [INF] [LAPTOP-H914ANHF#6] Executing ObjectResult, writing value of type 'MyBGList.DTO.RestDTO`1[[MyBGList.Models.BoardGame[], MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+09:08:15 [INF] [LAPTOP-H914ANHF#6] Executed action MyBGList.Controllers.BoardGamesController.Get (MyBGList) in 12456.5569ms
+09:08:15 [INF] [LAPTOP-H914ANHF#6] Executed endpoint 'MyBGList.Controllers.BoardGamesController.Get (MyBGList)'
+09:08:15 [INF] [LAPTOP-H914ANHF#6] Request finished HTTP/2 GET https://localhost:55221/boardgames - - - 200 - application/json;+charset=utf-8 12674.9518ms
+09:08:15 [INF] [LAPTOP-H914ANHF#15] Request starting HTTP/2 GET https://localhost:55221/favicon.ico - -
+09:08:15 [INF] [LAPTOP-H914ANHF#15] Request finished HTTP/2 GET https://localhost:55221/favicon.ico - - - 404 0 - 7.4090ms
+09:09:52 [INF] [LAPTOP-H914ANHF#4] Request starting HTTP/2 OPTIONS https://localhost:55221/ - -
+09:09:52 [INF] [LAPTOP-H914ANHF#4] CORS policy execution successful.
+09:09:52 [INF] [LAPTOP-H914ANHF#4] Request finished HTTP/2 OPTIONS https://localhost:55221/ - - - 204 - - 30.1156ms
+09:09:52 [INF] [LAPTOP-H914ANHF#4] Request starting HTTP/2 GET https://localhost:55221/ - -
+09:09:52 [INF] [LAPTOP-H914ANHF#4] Request finished HTTP/2 GET https://localhost:55221/ - - - 404 0 - 4.0875ms
+10:11:38 [INF] [LAPTOP-H914ANHF#1] Now listening on: https://localhost:55221
+10:11:38 [INF] [LAPTOP-H914ANHF#1] Now listening on: http://localhost:55222
+10:11:38 [INF] [LAPTOP-H914ANHF#1] Application started. Press Ctrl+C to shut down.
+10:11:38 [INF] [LAPTOP-H914ANHF#1] Hosting environment: Development
+10:11:38 [INF] [LAPTOP-H914ANHF#1] Content root path: D:\My-repo\MyBGList\MyBGList\
+10:11:39 [INF] [LAPTOP-H914ANHF#6] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+10:11:40 [INF] [LAPTOP-H914ANHF#6] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 942.4369ms
+10:11:40 [INF] [LAPTOP-H914ANHF#7] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+10:11:40 [INF] [LAPTOP-H914ANHF#7] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 16.7872ms
+10:11:40 [INF] [LAPTOP-H914ANHF#9] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+10:11:41 [INF] [LAPTOP-H914ANHF#14] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 228.8574ms
+10:11:41 [INF] [LAPTOP-H914ANHF#4] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+10:11:41 [INF] [LAPTOP-H914ANHF#4] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 543.9938ms
+10:17:51 [INF] [LAPTOP-H914ANHF#6] Request starting HTTP/2 GET https://localhost:55221/error/test - -
+10:17:52 [INF] [LAPTOP-H914ANHF#20] Executing endpoint 'HTTP: GET /error/test'
+10:17:57 [INF] [LAPTOP-H914ANHF#20] Executed endpoint 'HTTP: GET /error/test'
+10:17:57 [ERR] [LAPTOP-H914ANHF#20] An unhandled exception has occurred while executing the request.
+System.Exception: test
+   at Program.<>c.<<Main>$>b__0_7() in D:\My-repo\MyBGList\MyBGList\Program.cs:line 149
+   at lambda_method2(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+10:17:58 [INF] [LAPTOP-H914ANHF#20] Executing endpoint 'HTTP: GET /error'
+10:17:58 [ERR] [LAPTOP-H914ANHF#20] An unhandled exception occurred.test
+System.Exception: test
+   at Program.<>c.<<Main>$>b__0_7() in D:\My-repo\MyBGList\MyBGList\Program.cs:line 149
+   at lambda_method2(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+10:17:58 [INF] [LAPTOP-H914ANHF#20] Writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails' with status code '200'.
+10:17:58 [INF] [LAPTOP-H914ANHF#20] Executed endpoint 'HTTP: GET /error'
+10:17:58 [INF] [LAPTOP-H914ANHF#20] Request finished HTTP/2 GET https://localhost:55221/error/test - - - 500 - application/problem+json 6331.8307ms
+10:18:19 [INF] [LAPTOP-H914ANHF#18] Application is shutting down...
+10:47:46 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+10:47:46 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+10:47:46 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+10:47:46 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+10:47:46 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+10:47:47 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+10:47:47 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 387.7315ms
+10:47:47 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+10:47:47 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 4.6434ms
+10:47:47 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+10:47:47 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 85.0172ms
+10:47:48 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+10:47:48 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 282.9034ms
+10:47:59 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/domains - -
+10:47:59 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.DomainsController.Get (MyBGList)'
+10:47:59 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Route matched with {action = "Get", controller = "Domains"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[MyBGList.DTO.RestDTO`1[MyBGList.Models.Domain[]]]] Get(MyBGList.DTO.RequestDTO`1[MyBGList.DTO.DomainDTO]) on controller MyBGList.Controllers.DomainsController (MyBGList).
+10:48:02 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+10:48:02 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Domains] AS [d]
+10:48:08 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executed DbCommand (29ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[CreatedDate], [d].[LastModifiedDate], [d].[Name]
+FROM [Domains] AS [d]
+ORDER BY [d].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+10:48:09 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'MyBGList.DTO.RestDTO`1[[MyBGList.Models.Domain[], MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+10:48:09 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executed action MyBGList.Controllers.DomainsController.Get (MyBGList) in 9720.7774ms
+10:48:09 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.DomainsController.Get (MyBGList)'
+10:48:09 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/domains - - - 200 - application/json;+charset=utf-8 9811.8036ms
+10:53:55 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+10:53:55 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+10:53:55 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+10:53:55 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+10:53:55 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+10:53:56 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+10:53:56 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 296.1607ms
+10:53:56 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+10:53:56 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 3.4428ms
+10:53:56 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+10:53:56 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 84.8908ms
+10:53:56 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+10:53:56 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 212.9349ms
+10:54:12 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/error/test/501 - -
+10:54:12 [INF] [LAPTOP-H914ANHF#14 ] Executing endpoint 'HTTP: GET /error/test/501'
+10:54:12 [INF] [LAPTOP-H914ANHF#14 ] Executed endpoint 'HTTP: GET /error/test/501'
+10:54:12 [ERR] [LAPTOP-H914ANHF#14 ] An unhandled exception has occurred while executing the request.
+System.NotImplementedException: test 501
+   at Program.<>c.<<Main>$>b__0_8() in D:\My-repo\MyBGList\MyBGList\Program.cs:line 156
+   at lambda_method3(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+10:54:12 [INF] [LAPTOP-H914ANHF#14 ] Executing endpoint 'HTTP: GET /error'
+10:54:12 [ERR] [LAPTOP-H914ANHF#14 ] An unhandled exception occurred.test 501
+System.NotImplementedException: test 501
+   at Program.<>c.<<Main>$>b__0_8() in D:\My-repo\MyBGList\MyBGList\Program.cs:line 156
+   at lambda_method3(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+10:54:12 [INF] [LAPTOP-H914ANHF#14 ] Writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails' with status code '200'.
+10:54:12 [INF] [LAPTOP-H914ANHF#14 ] Executed endpoint 'HTTP: GET /error'
+10:54:12 [INF] [LAPTOP-H914ANHF#14 ] Request finished HTTP/2 GET https://localhost:55221/error/test/501 - - - 501 - application/problem+json 153.7199ms
+16:45:55 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+16:45:55 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+16:45:55 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+16:45:55 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+16:45:55 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+16:45:56 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+16:45:57 [INF] [LAPTOP-H914ANHF#8 ] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 724.2713ms
+16:45:57 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+16:45:57 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 6.7562ms
+16:45:57 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+16:45:58 [INF] [LAPTOP-H914ANHF#8 ] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 777.2725ms
+16:45:58 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+16:46:00 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1174.9950ms
+16:46:03 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/cache/test/1 - -
+16:46:03 [INF] [LAPTOP-H914ANHF#8 ] Executing endpoint 'HTTP: GET /cache/test/1'
+16:46:03 [INF] [LAPTOP-H914ANHF#8 ] Executing result with status code '200'.
+16:46:03 [INF] [LAPTOP-H914ANHF#8 ] Executed endpoint 'HTTP: GET /cache/test/1'
+16:46:03 [INF] [LAPTOP-H914ANHF#8 ] Request finished HTTP/2 GET https://localhost:55221/cache/test/1 - - - 200 0 - 118.4953ms
+16:46:13 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/cache/test/1 - -
+16:46:13 [INF] [LAPTOP-H914ANHF#9 ] Executing endpoint 'HTTP: GET /cache/test/1'
+16:46:13 [INF] [LAPTOP-H914ANHF#9 ] Executing result with status code '200'.
+16:46:13 [INF] [LAPTOP-H914ANHF#9 ] Executed endpoint 'HTTP: GET /cache/test/1'
+16:46:13 [INF] [LAPTOP-H914ANHF#9 ] Request finished HTTP/2 GET https://localhost:55221/cache/test/1 - - - 200 0 - 8.3805ms
+16:47:52 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+16:47:52 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+16:47:52 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+16:47:52 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+16:47:52 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+16:47:52 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+16:47:53 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 359.6756ms
+16:47:53 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+16:47:53 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 3.7897ms
+16:47:53 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+16:47:53 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 80.4999ms
+16:47:53 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+16:47:53 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 271.0274ms
+16:48:00 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/cache/test/2 - -
+16:48:00 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Executing endpoint 'HTTP: GET /cache/test/2'
+16:48:00 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Executing result with status code '200'.
+16:48:00 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Executed endpoint 'HTTP: GET /cache/test/2'
+16:48:00 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/cache/test/2 - - - 200 0 - 26.6072ms
+16:48:15 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/cache/test/2 - -
+16:48:15 [INF] [LAPTOP-H914ANHF#14 ] Executing endpoint 'HTTP: GET /cache/test/2'
+16:48:15 [INF] [LAPTOP-H914ANHF#14 ] Executing result with status code '200'.
+16:48:15 [INF] [LAPTOP-H914ANHF#14 ] Executed endpoint 'HTTP: GET /cache/test/2'
+16:48:15 [INF] [LAPTOP-H914ANHF#14 ] Request finished HTTP/2 GET https://localhost:55221/cache/test/2 - - - 200 0 - 16.6838ms

@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyBGList</name>
+    </assembly>
+    <members>
+        <member name="M:MyBGList.Controllers.AccountController.Register(MyBGList.DTO.RegisterDTO)">
+            <summary>
+            Registers a new user.
+            </summary>
+            <param name="input">A DTO containing the user data.</param>
+            <returns>A 201 - Created Status Code in case of success.</returns>
+            <response code="201">User has been registered</response>
+            <response code="400">Invalid data</response>
+            <response code="500">An error occurred</response>
+        </member>
+        <member name="M:MyBGList.Controllers.AccountController.Login(MyBGList.DTO.LoginDTO)">
+            <summary>
+            Performs a user login.
+            </summary>
+            <param name="input">A DTO containing the user's credentials.</param>
+            <returns>The Bearer Token (in JWT format).</returns>
+            <response code="200">User has been logged in</response>
+            <response code="400">Login failed (bad request)</response>
+            <response code="401">Login failed (unauthorized)</response>
+        </member>
+        <member name="M:MyBGList.Controllers.DomainsController.Get(MyBGList.DTO.RequestDTO{MyBGList.DTO.DomainDTO})">
+            <summary>
+            Gets a list of domains
+            </summary>
+            <remarks>Retrives a list of domains with custom paging, sorting, and filtering rules</remarks>
+            <param name="input">A DTO object that can be used to customize some retrieval parameters</param>
+            <returns>A RestDTO object containing a list of domains</returns>
+        </member>
+        <member name="T:MyBGList.gRPC.GrpcReflection">
+            <summary>Holder for reflection information generated from gRPC/grpc.proto</summary>
+        </member>
+        <member name="P:MyBGList.gRPC.GrpcReflection.Descriptor">
+            <summary>File descriptor for gRPC/grpc.proto</summary>
+        </member>
+        <member name="F:MyBGList.gRPC.BoardGameRequest.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="F:MyBGList.gRPC.UpdateBoardGameRequest.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="F:MyBGList.gRPC.UpdateBoardGameRequest.NameFieldNumber">
+            <summary>Field number for the "name" field.</summary>
+        </member>
+        <member name="F:MyBGList.gRPC.BoardGameResponse.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="F:MyBGList.gRPC.BoardGameResponse.NameFieldNumber">
+            <summary>Field number for the "name" field.</summary>
+        </member>
+        <member name="F:MyBGList.gRPC.BoardGameResponse.YearFieldNumber">
+            <summary>Field number for the "year" field.</summary>
+        </member>
+        <member name="F:MyBGList.gRPC.DomainRequest.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="F:MyBGList.gRPC.UpdateDomainRequest.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="F:MyBGList.gRPC.UpdateDomainRequest.NameFieldNumber">
+            <summary>Field number for the "name" field.</summary>
+        </member>
+        <member name="F:MyBGList.gRPC.DomainResponse.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="F:MyBGList.gRPC.DomainResponse.NameFieldNumber">
+            <summary>Field number for the "name" field.</summary>
+        </member>
+        <member name="F:MyBGList.gRPC.MechanicRequest.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="F:MyBGList.gRPC.UpdateMechanicRequest.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="F:MyBGList.gRPC.UpdateMechanicRequest.NameFieldNumber">
+            <summary>Field number for the "name" field.</summary>
+        </member>
+        <member name="F:MyBGList.gRPC.MechanicResponse.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="F:MyBGList.gRPC.MechanicResponse.NameFieldNumber">
+            <summary>Field number for the "name" field.</summary>
+        </member>
+        <member name="P:MyBGList.gRPC.Grpc.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:MyBGList.gRPC.Grpc.GrpcBase">
+            <summary>Base class for server-side implementations of Grpc</summary>
+        </member>
+        <member name="T:MyBGList.gRPC.Grpc.GrpcClient">
+            <summary>Client for Grpc</summary>
+        </member>
+        <member name="M:MyBGList.gRPC.Grpc.GrpcClient.#ctor(Grpc.Core.ChannelBase)">
+            <summary>Creates a new client for Grpc</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:MyBGList.gRPC.Grpc.GrpcClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for Grpc that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:MyBGList.gRPC.Grpc.GrpcClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:MyBGList.gRPC.Grpc.GrpcClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:MyBGList.gRPC.Grpc.GrpcClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+        <member name="M:MyBGList.gRPC.Grpc.BindService(MyBGList.gRPC.Grpc.GrpcBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:MyBGList.gRPC.Grpc.BindService(Grpc.Core.ServiceBinderBase,MyBGList.gRPC.Grpc.GrpcBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,2 @@
+obj\Debug\net6.0\gRPC/Grpc.cs \
+obj\Debug\net6.0\gRPC/GrpcGrpc.cs: gRPC/grpc.proto

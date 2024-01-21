@@ -1,0 +1,70 @@
+15:20:52 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+15:20:54 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+15:20:54 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+15:20:54 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+15:20:54 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+15:20:54 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+15:20:55 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+15:20:56 [INF] [LAPTOP-H914ANHF#12 ] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 808.1232ms
+15:20:56 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+15:20:56 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13751 application/javascript;+charset=utf-8 42.0699ms
+15:20:56 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+15:20:56 [INF] [LAPTOP-H914ANHF#15 ] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 192.6616ms
+15:20:57 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+15:20:57 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/favicon-32x32.png - -
+15:20:57 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+15:20:57 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/favicon-32x32.png - - - 200 628 image/png 89.5954ms
+15:20:57 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 762.2633ms
+15:59:06 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+15:59:06 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+15:59:06 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+15:59:06 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+15:59:06 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+15:59:06 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+15:59:07 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+15:59:08 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 680.6377ms
+15:59:08 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+15:59:08 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13751 application/javascript;+charset=utf-8 24.5631ms
+15:59:08 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+15:59:08 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 197.0941ms
+15:59:08 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+15:59:09 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 492.7925ms
+15:59:26 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/auth/test/1 - -
+15:59:26 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] No cached response available for this request.
+15:59:28 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+15:59:28 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] AuthenticationScheme: Bearer was challenged.
+15:59:28 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] The response could not be cached for this request.
+15:59:28 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/auth/test/1 - - - 401 0 - 1685.9082ms
+16:00:46 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Account/Login application/json 67
+16:00:46 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] CORS policy execution successful.
+16:00:46 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.AccountController.Login (MyBGList)'
+16:00:46 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(MyBGList.DTO.LoginDTO) on controller MyBGList.Controllers.AccountController (MyBGList).
+16:00:50 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+16:00:51 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed DbCommand (149ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+16:00:51 [WRN] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Invalid password for user.
+16:00:52 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+16:00:52 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed action MyBGList.Controllers.AccountController.Login (MyBGList) in 5922.3567ms
+16:00:52 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.AccountController.Login (MyBGList)'
+16:00:52 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Account/Login application/json 67 - 401 - application/problem+json;+charset=utf-8 6092.6139ms
+16:01:27 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Account/Login application/json 71
+16:01:27 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] CORS policy execution successful.
+16:01:27 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.AccountController.Login (MyBGList)'
+16:01:27 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(MyBGList.DTO.LoginDTO) on controller MyBGList.Controllers.AccountController (MyBGList).
+16:01:27 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+16:01:27 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executed DbCommand (12ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+16:01:28 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'System.String'.
+16:01:28 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executed action MyBGList.Controllers.AccountController.Login (MyBGList) in 1324.226ms
+16:01:28 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.AccountController.Login (MyBGList)'
+16:01:28 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Account/Login application/json 71 - 200 - text/plain;+charset=utf-8 1355.3361ms
+16:01:52 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/auth/test/1 - -
+16:01:53 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executing endpoint 'HTTP: GET /auth/test/1'
+16:01:53 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Writing value of type 'System.String' with status code '200'.
+16:01:53 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed endpoint 'HTTP: GET /auth/test/1'
+16:01:53 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/auth/test/1 - - - 200 - application/json;+charset=utf-8 418.4409ms

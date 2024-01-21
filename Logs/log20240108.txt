@@ -1,0 +1,960 @@
+11:47:36 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+11:47:38 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+11:47:38 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+11:47:38 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+11:47:38 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+11:47:38 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+11:47:41 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+11:47:42 [INF] [LAPTOP-H914ANHF#7 ] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 814.9933ms
+11:47:42 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+11:47:42 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 13.4455ms
+11:47:42 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+11:47:42 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 325.4012ms
+11:47:43 [INF] [LAPTOP-H914ANHF#19 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+11:47:44 [INF] [LAPTOP-H914ANHF#19 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1082.8631ms
+11:48:22 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Account/Login application/json 80
+11:48:22 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] CORS policy execution successful.
+11:48:24 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.AccountController.Login (MyBGList)'
+11:48:24 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(MyBGList.DTO.LoginDTO) on controller MyBGList.Controllers.AccountController (MyBGList).
+11:48:27 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+11:48:29 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Executed DbCommand (151ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+11:48:30 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Executed DbCommand (42ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+11:48:31 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'System.String'.
+11:48:31 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Executed action MyBGList.Controllers.AccountController.Login (MyBGList) in 7014.8579ms
+11:48:31 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.AccountController.Login (MyBGList)'
+11:48:31 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Account/Login application/json 80 - 200 - text/plain;+charset=utf-8 9053.9955ms
+11:48:48 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql - -
+11:48:48 [INF] [LAPTOP-H914ANHF#22 ] No cached response available for this request.
+11:48:49 [INF] [LAPTOP-H914ANHF#22 ] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:49 [INF] [LAPTOP-H914ANHF#22 ] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:49 [INF] [LAPTOP-H914ANHF#22 ] The response could not be cached for this request.
+11:48:49 [INF] [LAPTOP-H914ANHF#22 ] Request finished HTTP/2 GET https://localhost:55221/graphql - - - 301 0 - 91.1365ms
+11:48:49 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/ - -
+11:48:49 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] No cached response available for this request.
+11:48:49 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:49 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:49 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:49 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/ - - - 200 - text/html 93.4419ms
+11:48:49 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/polyfills.14223cd3.js - -
+11:48:49 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+11:48:49 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/917.e1934008.js - -
+11:48:49 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] No cached response available for this request.
+11:48:49 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 13.5907ms
+11:48:49 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] No cached response available for this request.
+11:48:49 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:49 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:49 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/main.70d3c877.js - -
+11:48:49 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+11:48:49 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] No cached response available for this request.
+11:48:49 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:49 [INF] [LAPTOP-H914ANHF#7 ] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.8461ms
+11:48:49 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:49 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:49 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/main.70d3c877.js - - - 200 47424 application/javascript 93.6155ms
+11:48:49 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:49 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:49 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:49 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:49 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/polyfills.14223cd3.js - - - 200 72152 application/javascript 320.5842ms
+11:48:49 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/917.e1934008.js - - - 200 204796 application/javascript 322.6668ms
+11:48:49 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/css/styles.d1755a82.chunk.css - -
+11:48:49 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/927.0676b810.chunk.js - -
+11:48:49 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/696.23e5e4e1.chunk.js - -
+11:48:49 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] No cached response available for this request.
+11:48:49 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] No cached response available for this request.
+11:48:49 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:49 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:49 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/7.ef194ce7.chunk.js - -
+11:48:49 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:49 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] No cached response available for this request.
+11:48:50 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:50 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:50 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/927.0676b810.chunk.js - - - 200 34176 application/javascript 442.0627ms
+11:48:50 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:49 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:50 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:50 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:50 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/7.ef194ce7.chunk.js - - - 200 7348 application/javascript 234.4331ms
+11:48:50 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/696.23e5e4e1.chunk.js - - - 200 17192 application/javascript 551.4785ms
+11:48:49 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/494.af2a9e30.chunk.js - -
+11:48:49 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/693.ac4b4fbf.chunk.js - -
+11:48:50 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] No cached response available for this request.
+11:48:50 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] No cached response available for this request.
+11:48:50 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:50 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:49 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] No cached response available for this request.
+11:48:49 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/243.2e8d04dd.chunk.js - -
+11:48:50 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:50 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] No cached response available for this request.
+11:48:49 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/568.71498544.chunk.js - -
+11:48:50 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:50 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] No cached response available for this request.
+11:48:49 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/641.5f8b79d2.chunk.js - -
+11:48:50 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:50 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] No cached response available for this request.
+11:48:50 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:50 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:50 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:50 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/568.71498544.chunk.js - - - 200 733 application/javascript 398.1336ms
+11:48:50 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:50 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:50 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/641.5f8b79d2.chunk.js - - - 200 28281 application/javascript 445.9139ms
+11:48:50 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:50 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:50 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/css/styles.d1755a82.chunk.css - - - 200 95138 text/css 821.0889ms
+11:48:50 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:50 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:50 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:50 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/243.2e8d04dd.chunk.js - - - 200 412682 application/javascript 483.9703ms
+11:48:50 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:50 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/494.af2a9e30.chunk.js - - - 200 574441 application/javascript 902.8946ms
+11:48:50 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:50 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:50 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/693.ac4b4fbf.chunk.js - - - 200 3393410 application/javascript 1030.9349ms
+11:48:51 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/favicon.svg - -
+11:48:51 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/bcp-config.json - -
+11:48:51 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] No cached response available for this request.
+11:48:51 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] No cached response available for this request.
+11:48:51 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:51 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:51 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/manifest.webmanifest - -
+11:48:51 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:51 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] No cached response available for this request.
+11:48:51 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:51 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:51 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:51 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:52 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/bcp-config.json - - - 200 - application/json;+charset=utf-8 251.1735ms
+11:48:52 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:51 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:52 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/manifest.webmanifest - - - 200 304 application/manifest+json 122.1304ms
+11:48:52 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/favicon.svg - - - 200 773 image/svg+xml 397.1532ms
+11:48:52 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/favicon.ico - -
+11:48:52 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] No cached response available for this request.
+11:48:52 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/95.4f7bae42.chunk.js - -
+11:48:52 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:52 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] No cached response available for this request.
+11:48:52 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:52 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:52 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:52 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:52 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/favicon.ico - - - 200 15406 image/x-icon 96.9385ms
+11:48:52 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:52 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/95.4f7bae42.chunk.js - - - 200 19101 application/javascript 85.9392ms
+11:48:53 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/document.f253bc81.chunk.js - -
+11:48:53 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] No cached response available for this request.
+11:48:53 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:53 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/schema.a4807966.chunk.js - -
+11:48:53 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] No cached response available for this request.
+11:48:53 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:53 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:53 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:53 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:53 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:53 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/document.f253bc81.chunk.js - - - 200 24960 application/javascript 70.2486ms
+11:48:53 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/schema.a4807966.chunk.js - - - 200 37531 application/javascript 71.4620ms
+11:48:53 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/polyfills.14223cd3.js - -
+11:48:53 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] No cached response available for this request.
+11:48:53 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:53 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/polyfills.14223cd3.js - -
+11:48:53 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:53 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] No cached response available for this request.
+11:48:53 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:53 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:53 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/polyfills.14223cd3.js - - - 200 72152 application/javascript 73.9399ms
+11:48:53 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/494.af2a9e30.chunk.js - -
+11:48:53 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/619.d2a9edb4.chunk.js - -
+11:48:53 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] No cached response available for this request.
+11:48:53 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] No cached response available for this request.
+11:48:53 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/619.d2a9edb4.chunk.js - - - 200 38633 application/javascript 116.9783ms
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/polyfills.14223cd3.js - - - 200 72152 application/javascript 217.4387ms
+11:48:54 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/494.af2a9e30.chunk.js - -
+11:48:54 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] No cached response available for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/494.af2a9e30.chunk.js - - - 200 574441 application/javascript 192.7323ms
+11:48:54 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/494.af2a9e30.chunk.js - - - 200 574441 application/javascript 89.1084ms
+11:48:54 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/160.5700f964.chunk.js - -
+11:48:54 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] No cached response available for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/160.5700f964.chunk.js - - - 200 14180 application/javascript 46.1024ms
+11:48:54 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/160.5700f964.chunk.js - -
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/696.23e5e4e1.chunk.js - -
+11:48:54 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] No cached response available for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] No cached response available for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/696.23e5e4e1.chunk.js - - - 200 17192 application/javascript 189.0729ms
+11:48:54 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/160.5700f964.chunk.js - - - 200 14180 application/javascript 216.6003ms
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/927.0676b810.chunk.js - -
+11:48:54 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/696.23e5e4e1.chunk.js - -
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] No cached response available for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] No cached response available for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/media/FiraCode-Medium.1bc138a84f63b384c3f2.woff2 - -
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] CORS policy execution successful.
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] No cached response available for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/927.0676b810.chunk.js - - - 200 34176 application/javascript 102.6418ms
+11:48:54 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/editor.a85ce25e.js - -
+11:48:54 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/13.6582dd74.chunk.js - -
+11:48:54 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] No cached response available for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] No cached response available for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/graphql.worker.1e36c99e.js - -
+11:48:54 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/media/FiraCode-Medium.1bc138a84f63b384c3f2.woff2 - - - 200 102384 font/woff2 133.4179ms
+11:48:54 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] No cached response available for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:48:54 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] No cached response available for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/13.6582dd74.chunk.js - - - 200 20246 application/javascript 229.3793ms
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/319.15add1dd.chunk.js - -
+11:48:54 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] No cached response available for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/696.23e5e4e1.chunk.js - - - 200 17192 application/javascript 438.7387ms
+11:48:54 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/13.6582dd74.chunk.js - -
+11:48:54 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] No cached response available for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:54 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/319.15add1dd.chunk.js - - - 200 13918 application/javascript 117.1034ms
+11:48:54 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:54 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:55 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:55 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/641.5f8b79d2.chunk.js - -
+11:48:55 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] No cached response available for this request.
+11:48:55 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/editor.a85ce25e.js - - - 200 213599 application/javascript 445.9591ms
+11:48:55 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:55 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/13.6582dd74.chunk.js - - - 200 20246 application/javascript 124.7641ms
+11:48:55 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:55 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/523.9581171d.chunk.js - -
+11:48:55 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:55 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] No cached response available for this request.
+11:48:55 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:55 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/641.5f8b79d2.chunk.js - - - 200 28281 application/javascript 78.7331ms
+11:48:55 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:55 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:55 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:55 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:55 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/7.ef194ce7.chunk.js - -
+11:48:55 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] No cached response available for this request.
+11:48:55 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 487.0302ms
+11:48:55 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:55 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/523.9581171d.chunk.js - - - 200 12033 application/javascript 142.8862ms
+11:48:55 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/97.cee6a1a5.chunk.js - -
+11:48:55 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] No cached response available for this request.
+11:48:55 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:55 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:55 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:55 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:55 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:55 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/97.cee6a1a5.chunk.js - - - 200 6844 application/javascript 106.2281ms
+11:48:55 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/media/codicon.b797181c93b3755f4fa1.ttf - -
+11:48:55 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/7.ef194ce7.chunk.js - - - 200 7348 application/javascript 242.9524ms
+11:48:55 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] CORS policy execution successful.
+11:48:55 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/101.f1be304c.chunk.js - -
+11:48:55 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/641.5f8b79d2.chunk.js - -
+11:48:55 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] No cached response available for this request.
+11:48:55 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] No cached response available for this request.
+11:48:55 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:55 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:55 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:55 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:55 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:55 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:55 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/101.f1be304c.chunk.js - - - 200 8708 application/javascript 117.4416ms
+11:48:55 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/641.5f8b79d2.chunk.js - - - 200 28281 application/javascript 123.4600ms
+11:48:55 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] No cached response available for this request.
+11:48:55 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:55 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/101.f1be304c.chunk.js - -
+11:48:55 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] No cached response available for this request.
+11:48:55 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:55 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:55 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:55 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:55 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/media/codicon.b797181c93b3755f4fa1.ttf - - - 200 72504 application/x-font-ttf 322.8639ms
+11:48:55 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:55 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/101.f1be304c.chunk.js - - - 200 8708 application/javascript 205.8803ms
+11:48:56 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:56 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:48:56 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:56 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] No cached response available for this request.
+11:48:56 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/graphql.worker.1e36c99e.js - - - 200 1024426 application/javascript 1457.2471ms
+11:48:56 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:56 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:56 [INF] [LAPTOP-H914ANHF#38 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/graphql application/json 266
+11:48:56 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] The response could not be cached for this request.
+11:48:56 [INF] [LAPTOP-H914ANHF#38 .NET ThreadPool Worker] CORS policy execution successful.
+11:48:56 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 217.4375ms
+11:48:56 [INF] [LAPTOP-H914ANHF#38 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:59 [INF] [LAPTOP-H914ANHF#38 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:59 [INF] [LAPTOP-H914ANHF#38 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/graphql application/json 266 - 200 - application/json;+charset=utf-8 3579.9359ms
+11:48:59 [INF] [LAPTOP-H914ANHF#38 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/graphql application/json 1315
+11:48:59 [INF] [LAPTOP-H914ANHF#38 .NET ThreadPool Worker] CORS policy execution successful.
+11:48:59 [INF] [LAPTOP-H914ANHF#38 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:59 [INF] [LAPTOP-H914ANHF#38 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:48:59 [INF] [LAPTOP-H914ANHF#38 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/graphql application/json 1315 - 200 - application/json;+charset=utf-8 141.1194ms
+11:49:01 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:01 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] No cached response available for this request.
+11:49:01 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:01 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:01 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] No cached response available for this request.
+11:49:01 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:01 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:01 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:01 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 53.0479ms
+11:49:01 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:01 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:01 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 48.7447ms
+11:49:14 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:14 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] No cached response available for this request.
+11:49:14 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:14 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:14 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] No cached response available for this request.
+11:49:14 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:14 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:14 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:14 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 58.9665ms
+11:49:14 [INF] [LAPTOP-H914ANHF#38 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:14 [INF] [LAPTOP-H914ANHF#38 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:14 [INF] [LAPTOP-H914ANHF#38 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 55.2217ms
+11:49:15 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:15 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] No cached response available for this request.
+11:49:15 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:15 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:15 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] No cached response available for this request.
+11:49:15 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:15 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:15 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:15 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 60.9170ms
+11:49:15 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:15 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:15 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 47.3455ms
+11:49:15 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:15 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] No cached response available for this request.
+11:49:15 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:15 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:15 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] No cached response available for this request.
+11:49:15 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:15 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:15 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:15 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 82.0925ms
+11:49:15 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:15 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:15 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 63.1807ms
+11:49:15 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:15 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] No cached response available for this request.
+11:49:15 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:15 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:15 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] No cached response available for this request.
+11:49:15 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:15 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:16 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:16 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 69.8566ms
+11:49:16 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:16 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:16 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 68.3607ms
+11:49:17 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:17 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] No cached response available for this request.
+11:49:17 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:17 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:17 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:17 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] No cached response available for this request.
+11:49:17 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:17 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:17 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 39.0543ms
+11:49:17 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:17 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:17 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 44.8538ms
+11:49:17 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:17 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] No cached response available for this request.
+11:49:17 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:18 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:18 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] No cached response available for this request.
+11:49:18 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:18 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:18 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:18 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 125.5614ms
+11:49:18 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:18 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:18 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 94.0546ms
+11:49:19 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:19 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] No cached response available for this request.
+11:49:19 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:19 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:19 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] No cached response available for this request.
+11:49:19 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:19 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:19 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:19 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 78.5146ms
+11:49:19 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:19 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:19 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 59.3169ms
+11:49:22 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:22 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] No cached response available for this request.
+11:49:22 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:22 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:22 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] No cached response available for this request.
+11:49:22 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:22 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:22 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:22 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 55.0038ms
+11:49:22 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:22 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:22 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 54.1535ms
+11:49:24 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:24 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] No cached response available for this request.
+11:49:24 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:24 [INF] [LAPTOP-H914ANHF#17 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:24 [INF] [LAPTOP-H914ANHF#17 .NET ThreadPool Worker] No cached response available for this request.
+11:49:24 [INF] [LAPTOP-H914ANHF#17 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:24 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:24 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:24 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 61.9694ms
+11:49:24 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:24 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:24 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 53.7334ms
+11:49:25 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:25 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] No cached response available for this request.
+11:49:25 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:25 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:25 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:25 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] No cached response available for this request.
+11:49:25 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:25 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:25 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 67.8600ms
+11:49:25 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:25 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:25 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 69.4526ms
+11:49:26 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:26 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] No cached response available for this request.
+11:49:26 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:26 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:26 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] No cached response available for this request.
+11:49:26 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:26 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:26 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:26 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 71.7893ms
+11:49:26 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:26 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:26 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 66.6909ms
+11:49:27 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:27 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] No cached response available for this request.
+11:49:27 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:27 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:27 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] No cached response available for this request.
+11:49:27 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:27 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:27 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:27 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 86.0320ms
+11:49:27 [INF] [LAPTOP-H914ANHF#38 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:27 [INF] [LAPTOP-H914ANHF#38 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:27 [INF] [LAPTOP-H914ANHF#38 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 93.2612ms
+11:49:28 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:28 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] No cached response available for this request.
+11:49:28 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:29 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:29 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] No cached response available for this request.
+11:49:29 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:29 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:29 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:29 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:29 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 76.1651ms
+11:49:29 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:29 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 69.7124ms
+11:49:31 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:31 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] No cached response available for this request.
+11:49:31 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:31 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:31 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] No cached response available for this request.
+11:49:31 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:31 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:31 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:31 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 54.8812ms
+11:49:31 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:31 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:31 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 49.9733ms
+11:49:33 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:33 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] No cached response available for this request.
+11:49:33 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:33 [INF] [LAPTOP-H914ANHF#17 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:33 [INF] [LAPTOP-H914ANHF#17 .NET ThreadPool Worker] No cached response available for this request.
+11:49:33 [INF] [LAPTOP-H914ANHF#17 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:33 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:33 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:33 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 82.4354ms
+11:49:33 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:33 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:33 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 84.2873ms
+11:49:34 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:34 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] No cached response available for this request.
+11:49:34 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:34 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:34 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] No cached response available for this request.
+11:49:34 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:34 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:34 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:34 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 62.1544ms
+11:49:34 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:35 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:35 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 61.4710ms
+11:49:44 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:44 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] No cached response available for this request.
+11:49:44 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:44 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:44 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] No cached response available for this request.
+11:49:44 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:44 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:44 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] No cached response available for this request.
+11:49:44 [INF] [LAPTOP-H914ANHF#39 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:44 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:44 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:44 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:44 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:44 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:44 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] No cached response available for this request.
+11:49:44 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 121.0770ms
+11:49:44 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:44 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 88.1215ms
+11:49:44 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:44 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:44 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:44 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:44 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 101.5195ms
+11:49:44 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 71.5626ms
+11:49:45 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:45 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] No cached response available for this request.
+11:49:45 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:45 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:45 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] No cached response available for this request.
+11:49:45 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:45 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:45 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:45 [INF] [LAPTOP-H914ANHF#37 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 88.9279ms
+11:49:45 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:45 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:45 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 75.8509ms
+11:49:45 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:45 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] No cached response available for this request.
+11:49:45 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:45 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:45 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] No cached response available for this request.
+11:49:45 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:45 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:45 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:45 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 64.3579ms
+11:49:45 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:45 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:45 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 64.9310ms
+11:49:46 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:46 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] No cached response available for this request.
+11:49:46 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:46 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:46 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] No cached response available for this request.
+11:49:46 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:46 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:46 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:46 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 53.0176ms
+11:49:46 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:46 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:46 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 50.2575ms
+11:49:47 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:47 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] No cached response available for this request.
+11:49:47 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:47 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:47 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] No cached response available for this request.
+11:49:47 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:47 [INF] [LAPTOP-H914ANHF#36 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:47 [INF] [LAPTOP-H914ANHF#29 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:47 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 45.3203ms
+11:49:47 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:47 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:47 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 46.5713ms
+11:49:49 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:49 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] No cached response available for this request.
+11:49:49 [INF] [LAPTOP-H914ANHF#40 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:49 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:49 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] No cached response available for this request.
+11:49:49 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:49 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:49 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:49 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 72.6975ms
+11:49:49 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:49 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:49 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 65.6303ms
+11:49:49 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:49 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] No cached response available for this request.
+11:49:49 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:49 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - -
+11:49:49 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:49 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] No cached response available for this request.
+11:49:49 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:49 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:49 [INF] [LAPTOP-H914ANHF#26 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 124.4754ms
+11:49:49 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:49 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] The response could not be cached for this request.
+11:49:49 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/graphql/static/js/json.50fb813a.js - - - 200 340845 application/javascript 99.1710ms
+11:49:52 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/graphql application/json 124
+11:49:52 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] CORS policy execution successful.
+11:49:52 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+11:49:52 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:53 [INF] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+11:49:53 [WRN] [LAPTOP-H914ANHF#27 .NET ThreadPool Worker] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+11:49:53 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Executed DbCommand (23ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [b].[Name]
+FROM [BoardGames] AS [b]
+WHERE [b].[Id] = @__p_0
+11:49:53 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+11:49:53 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/graphql application/json 124 - 200 - application/json;+charset=utf-8 1069.0481ms
+16:28:52 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+16:28:53 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+16:28:53 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+16:28:53 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+16:28:53 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+16:28:53 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+16:28:55 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+16:28:56 [INF] [LAPTOP-H914ANHF#14 ] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 885.1647ms
+16:28:56 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+16:28:56 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+16:28:56 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 145.1170ms
+16:28:56 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 215.7997ms
+16:28:56 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+16:28:57 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 616.6730ms
+16:29:07 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/Grpc/GetBoardGame/1 - -
+16:29:07 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] No cached response available for this request.
+16:29:08 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.GrpcController.GetBoardGame (MyBGList)'
+16:29:08 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Route matched with {action = "GetBoardGame", controller = "Grpc"}. Executing controller action with signature System.Threading.Tasks.Task`1[MyBGList.gRPC.BoardGameResponse] GetBoardGame(Int32) on controller MyBGList.Controllers.GrpcController (MyBGList).
+16:29:13 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed action MyBGList.Controllers.GrpcController.GetBoardGame (MyBGList) in 5406.7401ms
+16:29:13 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.GrpcController.GetBoardGame (MyBGList)'
+16:29:13 [ERR] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] An unhandled exception has occurred while executing the request.
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)")
+   at Grpc.Net.Client.Balancer.Internal.ConnectionManager.PickAsync(PickContext context, Boolean waitForReady, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpMessageInvoker.<SendAsync>g__SendAsyncWithTelemetry|6_0(HttpMessageHandler handler, HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)
+   at MyBGList.Controllers.GrpcController.GetBoardGame(Int32 id) in D:\My-repo\MyBGList\MyBGList\Controllers\GrpcController.cs:line 16
+   at lambda_method17(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+16:29:13 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] No cached response available for this request.
+16:29:13 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executing endpoint 'HTTP: GET /error'
+16:29:14 [ERR] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] An unhandled exception occurred.Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)")
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)")
+   at Grpc.Net.Client.Balancer.Internal.ConnectionManager.PickAsync(PickContext context, Boolean waitForReady, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpMessageInvoker.<SendAsync>g__SendAsyncWithTelemetry|6_0(HttpMessageHandler handler, HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)
+   at MyBGList.Controllers.GrpcController.GetBoardGame(Int32 id) in D:\My-repo\MyBGList\MyBGList\Controllers\GrpcController.cs:line 16
+   at lambda_method17(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+16:29:14 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails' with status code '200'.
+16:29:14 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed endpoint 'HTTP: GET /error'
+16:29:14 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] The response could not be cached for this request.
+16:29:14 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/Grpc/GetBoardGame/1 - - - 500 - application/problem+json 6256.4419ms
+16:30:11 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/Grpc/GetBoardGame/1 - -
+16:30:11 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] No cached response available for this request.
+16:30:11 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.GrpcController.GetBoardGame (MyBGList)'
+16:30:11 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Route matched with {action = "GetBoardGame", controller = "Grpc"}. Executing controller action with signature System.Threading.Tasks.Task`1[MyBGList.gRPC.BoardGameResponse] GetBoardGame(Int32) on controller MyBGList.Controllers.GrpcController (MyBGList).
+16:30:15 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Executed action MyBGList.Controllers.GrpcController.GetBoardGame (MyBGList) in 4131.1596ms
+16:30:15 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.GrpcController.GetBoardGame (MyBGList)'
+16:30:15 [ERR] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] An unhandled exception has occurred while executing the request.
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)")
+   at Grpc.Net.Client.Balancer.Internal.ConnectionManager.PickAsync(PickContext context, Boolean waitForReady, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpMessageInvoker.<SendAsync>g__SendAsyncWithTelemetry|6_0(HttpMessageHandler handler, HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)
+   at MyBGList.Controllers.GrpcController.GetBoardGame(Int32 id) in D:\My-repo\MyBGList\MyBGList\Controllers\GrpcController.cs:line 16
+   at lambda_method17(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+16:30:15 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] No cached response available for this request.
+16:30:15 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Executing endpoint 'HTTP: GET /error'
+16:30:15 [ERR] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] An unhandled exception occurred.Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)")
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)")
+   at Grpc.Net.Client.Balancer.Internal.ConnectionManager.PickAsync(PickContext context, Boolean waitForReady, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpMessageInvoker.<SendAsync>g__SendAsyncWithTelemetry|6_0(HttpMessageHandler handler, HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)
+   at MyBGList.Controllers.GrpcController.GetBoardGame(Int32 id) in D:\My-repo\MyBGList\MyBGList\Controllers\GrpcController.cs:line 16
+   at lambda_method17(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+16:30:16 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails' with status code '200'.
+16:30:16 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Executed endpoint 'HTTP: GET /error'
+16:30:16 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] The response could not be cached for this request.
+16:30:16 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/Grpc/GetBoardGame/1 - - - 500 - application/problem+json 4235.2346ms
+16:31:57 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+16:31:58 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+16:31:58 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+16:31:58 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+16:31:58 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+16:31:58 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+16:32:00 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+16:32:01 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+16:32:01 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 753.8813ms
+16:32:01 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 24.7194ms
+16:32:01 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+16:32:01 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 157.7612ms
+16:32:01 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+16:32:02 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 499.0297ms
+16:32:15 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/Grpc/GetBoardGame/1 - -
+16:32:15 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] No cached response available for this request.
+16:32:15 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.GrpcController.GetBoardGame (MyBGList)'
+16:32:15 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Route matched with {action = "GetBoardGame", controller = "Grpc"}. Executing controller action with signature System.Threading.Tasks.Task`1[MyBGList.gRPC.BoardGameResponse] GetBoardGame(Int32) on controller MyBGList.Controllers.GrpcController (MyBGList).
+16:32:20 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executed action MyBGList.Controllers.GrpcController.GetBoardGame (MyBGList) in 4575.2197ms
+16:32:20 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.GrpcController.GetBoardGame (MyBGList)'
+16:32:20 [ERR] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] An unhandled exception has occurred while executing the request.
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)")
+   at Grpc.Net.Client.Balancer.Internal.ConnectionManager.PickAsync(PickContext context, Boolean waitForReady, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpMessageInvoker.<SendAsync>g__SendAsyncWithTelemetry|6_0(HttpMessageHandler handler, HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)
+   at MyBGList.Controllers.GrpcController.GetBoardGame(Int32 id) in D:\My-repo\MyBGList\MyBGList\Controllers\GrpcController.cs:line 16
+   at lambda_method17(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+16:32:20 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] No cached response available for this request.
+16:32:20 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executing endpoint 'HTTP: GET /error'
+16:32:20 [ERR] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] An unhandled exception occurred.Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)")
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)")
+   at Grpc.Net.Client.Balancer.Internal.ConnectionManager.PickAsync(PickContext context, Boolean waitForReady, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpMessageInvoker.<SendAsync>g__SendAsyncWithTelemetry|6_0(HttpMessageHandler handler, HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)
+   at MyBGList.Controllers.GrpcController.GetBoardGame(Int32 id) in D:\My-repo\MyBGList\MyBGList\Controllers\GrpcController.cs:line 16
+   at lambda_method17(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+16:32:20 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails' with status code '200'.
+16:32:20 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executed endpoint 'HTTP: GET /error'
+16:32:20 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] The response could not be cached for this request.
+16:32:20 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/Grpc/GetBoardGame/1 - - - 500 - application/problem+json 5334.0631ms
+16:32:43 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+16:32:44 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+16:32:44 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+16:32:44 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+16:32:44 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+16:32:44 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+16:32:45 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+16:32:46 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 795.3807ms
+16:32:46 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+16:32:46 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 28.7716ms
+16:32:46 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+16:32:46 [INF] [LAPTOP-H914ANHF#14 ] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 183.3963ms
+16:32:46 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+16:32:47 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 514.6887ms
+16:32:53 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/Grpc/GetBoardGame/1 - -
+16:32:53 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] No cached response available for this request.
+16:32:54 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.GrpcController.GetBoardGame (MyBGList)'
+16:32:54 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Route matched with {action = "GetBoardGame", controller = "Grpc"}. Executing controller action with signature System.Threading.Tasks.Task`1[MyBGList.gRPC.BoardGameResponse] GetBoardGame(Int32) on controller MyBGList.Controllers.GrpcController (MyBGList).
+16:32:54 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Grpc.Grpc/GetBoardGame application/grpc -
+16:32:54 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Executing endpoint 'gRPC - /Grpc.Grpc/GetBoardGame'
+16:32:58 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+16:32:59 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed DbCommand (116ms) [Parameters=[@__request_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[BGGRank], [b].[ComplexityAverage], [b].[CreatedDate], [b].[LastModifiedDate], [b].[MaxPlayers], [b].[MinAge], [b].[MinPlayers], [b].[Name], [b].[OwnedUsers], [b].[PlayTime], [b].[RatingAverage], [b].[UsersRated], [b].[Year]
+FROM [BoardGames] AS [b]
+WHERE [b].[Id] = @__request_Id_0
+16:33:00 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed endpoint 'gRPC - /Grpc.Grpc/GetBoardGame'
+16:33:00 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Grpc.Grpc/GetBoardGame application/grpc - - 200 - application/grpc 5290.9485ms
+16:33:00 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'MyBGList.gRPC.BoardGameResponse'.
+16:33:00 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Executed action MyBGList.Controllers.GrpcController.GetBoardGame (MyBGList) in 6054.884ms
+16:33:00 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.GrpcController.GetBoardGame (MyBGList)'
+16:33:00 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] The response could not be cached for this request.
+16:33:00 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/Grpc/GetBoardGame/1 - - - 200 - application/json;+charset=utf-8 6558.6035ms
+16:54:33 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+16:54:33 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+16:54:33 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+16:54:33 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+16:54:33 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+16:54:33 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+16:54:34 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+16:54:35 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 761.5638ms
+16:54:35 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+16:54:35 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 23.3067ms
+16:54:35 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+16:54:35 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 155.9373ms
+16:54:36 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+16:54:36 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 502.1539ms
+16:54:59 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Account/Login application/json 80
+16:54:59 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] CORS policy execution successful.
+16:55:00 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.AccountController.Login (MyBGList)'
+16:55:00 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(MyBGList.DTO.LoginDTO) on controller MyBGList.Controllers.AccountController (MyBGList).
+16:55:03 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+16:55:05 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] Executed DbCommand (146ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+16:55:05 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+16:55:06 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'System.String'.
+16:55:06 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executed action MyBGList.Controllers.AccountController.Login (MyBGList) in 5696.5117ms
+16:55:06 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.AccountController.Login (MyBGList)'
+16:55:06 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Account/Login application/json 80 - 200 - text/plain;+charset=utf-8 6926.5782ms
+16:55:36 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Grpc/UpdateBoardGame?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVGVzdEFkbWluaXN0cmF0b3IiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOlsiTW9kZXJhdG9yIiwiQWRtaW5pc3RyYXRvciJdLCJleHAiOjE3MDQ3MDgwMDUsImlzcyI6Ik15QkdMaXN0IiwiYXVkIjoiTXlCR0xpc3QifQ.Wc-1NPg1zbbGiQum77A7G2aV-uAKbKoNY4bwrsLPleQ&id=1&name=Die%20Macher%20%28v3%29 - 0
+16:55:36 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] CORS policy execution successful.
+16:55:36 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.GrpcController.UpdateBoardGame (MyBGList)'
+16:55:36 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Route matched with {action = "UpdateBoardGame", controller = "Grpc"}. Executing controller action with signature System.Threading.Tasks.Task`1[MyBGList.gRPC.BoardGameResponse] UpdateBoardGame(System.String, Int32, System.String) on controller MyBGList.Controllers.GrpcController (MyBGList).
+16:55:36 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Grpc.Grpc/UpdateBoardGame application/grpc -
+16:55:37 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executing endpoint 'gRPC - /Grpc.Grpc/UpdateBoardGame'
+16:55:37 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+16:55:37 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed DbCommand (29ms) [Parameters=[@__request_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[BGGRank], [b].[ComplexityAverage], [b].[CreatedDate], [b].[LastModifiedDate], [b].[MaxPlayers], [b].[MinAge], [b].[MinPlayers], [b].[Name], [b].[OwnedUsers], [b].[PlayTime], [b].[RatingAverage], [b].[UsersRated], [b].[Year]
+FROM [BoardGames] AS [b]
+WHERE [b].[Id] = @__request_Id_0
+16:55:37 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed DbCommand (83ms) [Parameters=[@p13='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Precision = 4) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (Size = 200), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (Precision = 4) (Scale = 2) (DbType = Decimal), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [BoardGames] SET [BGGRank] = @p0, [ComplexityAverage] = @p1, [CreatedDate] = @p2, [LastModifiedDate] = @p3, [MaxPlayers] = @p4, [MinAge] = @p5, [MinPlayers] = @p6, [Name] = @p7, [OwnedUsers] = @p8, [PlayTime] = @p9, [RatingAverage] = @p10, [UsersRated] = @p11, [Year] = @p12
+WHERE [Id] = @p13;
+SELECT @@ROWCOUNT;
+16:55:38 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed endpoint 'gRPC - /Grpc.Grpc/UpdateBoardGame'
+16:55:38 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Grpc.Grpc/UpdateBoardGame application/grpc - - 200 - application/grpc 1372.6242ms
+16:55:38 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'MyBGList.gRPC.BoardGameResponse'.
+16:55:38 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed action MyBGList.Controllers.GrpcController.UpdateBoardGame (MyBGList) in 2020.7217ms
+16:55:38 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.GrpcController.UpdateBoardGame (MyBGList)'
+16:55:38 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Grpc/UpdateBoardGame?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVGVzdEFkbWluaXN0cmF0b3IiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOlsiTW9kZXJhdG9yIiwiQWRtaW5pc3RyYXRvciJdLCJleHAiOjE3MDQ3MDgwMDUsImlzcyI6Ik15QkdMaXN0IiwiYXVkIjoiTXlCR0xpc3QifQ.Wc-1NPg1zbbGiQum77A7G2aV-uAKbKoNY4bwrsLPleQ&id=1&name=Die%20Macher%20%28v3%29 - 0 - 200 - application/json;+charset=utf-8 2058.9423ms

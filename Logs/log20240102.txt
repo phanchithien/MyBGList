@@ -1,0 +1,398 @@
+14:55:03 [INF] [LAPTOP-H914ANHF#1 ] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+15:08:43 [INF] [LAPTOP-H914ANHF#1 ] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+15:08:44 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+15:08:44 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+15:08:44 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+15:08:44 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+15:08:44 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+15:08:44 [INF] [LAPTOP-H914ANHF#1 ] Applying migration '20231219081645_Chapter4_Exercises'.
+15:08:44 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Mechanics] ADD [Flags] int NOT NULL DEFAULT 0;
+15:08:44 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Mechanics] ADD [Notes] nvarchar(200) NULL;
+15:08:44 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Domains] ADD [Flags] int NOT NULL DEFAULT 0;
+15:08:44 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Domains] ADD [Notes] nvarchar(200) NULL;
+15:08:44 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [BoardGames] ADD [AlternateNames] nvarchar(200) NULL;
+15:08:44 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [BoardGames] ADD [Designer] nvarchar(200) NULL;
+15:08:46 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (1,588ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [BoardGames] ADD [Flags] int NOT NULL DEFAULT 0;
+15:08:46 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (148ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [BoardGames] ADD [PublisherId] int NOT NULL DEFAULT 0;
+15:08:46 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Categories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(200) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [LastModifiedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([Id])
+);
+15:08:46 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Publishers] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(200) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [LastModifiedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Publishers] PRIMARY KEY ([Id])
+);
+15:08:46 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [BoardGames_Categories] (
+    [CategoryId] int NOT NULL,
+    [BoardGameId] int NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_BoardGames_Categories] PRIMARY KEY ([BoardGameId], [CategoryId]),
+    CONSTRAINT [FK_BoardGames_Categories_BoardGames_BoardGameId] FOREIGN KEY ([BoardGameId]) REFERENCES [BoardGames] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_BoardGames_Categories_Categories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [Categories] ([Id]) ON DELETE CASCADE
+);
+15:08:46 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_BoardGames_PublisherId] ON [BoardGames] ([PublisherId]);
+15:08:46 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_BoardGames_Categories_CategoryId] ON [BoardGames_Categories] ([CategoryId]);
+15:08:46 [ERR] [LAPTOP-H914ANHF#1 ] Failed executing DbCommand (233ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [BoardGames] ADD CONSTRAINT [FK_BoardGames_Publishers_PublisherId] FOREIGN KEY ([PublisherId]) REFERENCES [Publishers] ([Id]) ON DELETE CASCADE;
+15:10:15 [INF] [LAPTOP-H914ANHF#1 ] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Applying migration '20231219081645_Chapter4_Exercises'.
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Mechanics] ADD [Flags] int NOT NULL DEFAULT 0;
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Mechanics] ADD [Notes] nvarchar(200) NULL;
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Domains] ADD [Flags] int NOT NULL DEFAULT 0;
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Domains] ADD [Notes] nvarchar(200) NULL;
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [BoardGames] ADD [AlternateNames] nvarchar(200) NULL;
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [BoardGames] ADD [Designer] nvarchar(200) NULL;
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [BoardGames] ADD [Flags] int NOT NULL DEFAULT 0;
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [BoardGames] ADD [PublisherId] int NOT NULL DEFAULT 0;
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Categories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(200) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [LastModifiedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([Id])
+);
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Publishers] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(200) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [LastModifiedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Publishers] PRIMARY KEY ([Id])
+);
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [BoardGames_Categories] (
+    [CategoryId] int NOT NULL,
+    [BoardGameId] int NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_BoardGames_Categories] PRIMARY KEY ([BoardGameId], [CategoryId]),
+    CONSTRAINT [FK_BoardGames_Categories_BoardGames_BoardGameId] FOREIGN KEY ([BoardGameId]) REFERENCES [BoardGames] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_BoardGames_Categories_Categories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [Categories] ([Id]) ON DELETE CASCADE
+);
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_BoardGames_PublisherId] ON [BoardGames] ([PublisherId]);
+15:10:35 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_BoardGames_Categories_CategoryId] ON [BoardGames_Categories] ([CategoryId]);
+15:10:35 [ERR] [LAPTOP-H914ANHF#1 ] Failed executing DbCommand (170ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [BoardGames] ADD CONSTRAINT [FK_BoardGames_Publishers_PublisherId] FOREIGN KEY ([PublisherId]) REFERENCES [Publishers] ([Id]) ON DELETE CASCADE;
+15:16:51 [INF] [LAPTOP-H914ANHF#1 ] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+15:17:07 [INF] [LAPTOP-H914ANHF#1 ] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+15:17:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+15:17:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+15:17:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+15:17:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+15:17:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+15:17:07 [INF] [LAPTOP-H914ANHF#1 ] Applying migration '20240102081652_Identity'.
+15:17:07 [ERR] [LAPTOP-H914ANHF#1 ] Failed executing DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [Publishers];
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Applying migration '20240102081652_Identity'.
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] nvarchar(450) NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] nvarchar(450) NOT NULL,
+    [RoleId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] nvarchar(450) NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [AspNetRoleClaims] ([RoleId]);
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [RoleNameIndex] ON [AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL;
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserClaims_UserId] ON [AspNetUserClaims] ([UserId]);
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserLogins_UserId] ON [AspNetUserLogins] ([UserId]);
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [AspNetUserRoles] ([RoleId]);
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [EmailIndex] ON [AspNetUsers] ([NormalizedEmail]);
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL;
+15:20:07 [INF] [LAPTOP-H914ANHF#1 ] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240102081652_Identity', N'6.0.11');
+20:24:40 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+20:24:42 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+20:24:42 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+20:24:42 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+20:24:42 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+20:24:42 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+20:24:43 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+20:24:44 [INF] [LAPTOP-H914ANHF#13 ] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 846.4483ms
+20:24:44 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+20:24:44 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 23.4168ms
+20:24:44 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+20:24:44 [INF] [LAPTOP-H914ANHF#14 ] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 179.1077ms
+20:24:44 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+20:24:45 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 627.9028ms
+20:25:43 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Account/Register application/json 82
+20:25:43 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] CORS policy execution successful.
+20:25:45 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.AccountController.Register (MyBGList)'
+20:25:45 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(MyBGList.DTO.RegisterDTO) on controller MyBGList.Controllers.AccountController (MyBGList).
+20:25:46 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+20:25:46 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Executed action MyBGList.Controllers.AccountController.Register (MyBGList) in 836.1864ms
+20:25:46 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.AccountController.Register (MyBGList)'
+20:25:46 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Account/Register application/json 82 - 400 - application/problem+json;+charset=utf-8 2819.7209ms
+20:26:26 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Account/Register application/json 82
+20:26:26 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] CORS policy execution successful.
+20:26:26 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.AccountController.Register (MyBGList)'
+20:26:26 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(MyBGList.DTO.RegisterDTO) on controller MyBGList.Controllers.AccountController (MyBGList).
+20:26:26 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+20:26:26 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed action MyBGList.Controllers.AccountController.Register (MyBGList) in 31.2995ms
+20:26:26 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.AccountController.Register (MyBGList)'
+20:26:26 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Account/Register application/json 82 - 400 - application/problem+json;+charset=utf-8 80.0409ms
+20:26:54 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+20:26:55 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+20:26:55 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+20:26:55 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+20:26:55 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+20:26:55 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+20:26:57 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+20:26:58 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 618.0346ms
+20:26:58 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+20:26:58 [INF] [LAPTOP-H914ANHF#10 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+20:26:58 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 16.3104ms
+20:26:58 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 184.0355ms
+20:26:58 [INF] [LAPTOP-H914ANHF#10 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+20:26:59 [INF] [LAPTOP-H914ANHF#10 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 679.5958ms
+20:27:17 [INF] [LAPTOP-H914ANHF#10 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Account/Register?UserName=TestUser&Email=TestEmail&Password=TestPassword - 0
+20:27:17 [INF] [LAPTOP-H914ANHF#10 .NET ThreadPool Worker] CORS policy execution successful.
+20:27:17 [INF] [LAPTOP-H914ANHF#10 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.AccountController.Register (MyBGList)'
+20:27:17 [INF] [LAPTOP-H914ANHF#10 .NET ThreadPool Worker] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(MyBGList.DTO.RegisterDTO) on controller MyBGList.Controllers.AccountController (MyBGList).
+20:27:32 [INF] [LAPTOP-H914ANHF#10 .NET ThreadPool Worker] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+20:27:32 [INF] [LAPTOP-H914ANHF#10 .NET ThreadPool Worker] Executed action MyBGList.Controllers.AccountController.Register (MyBGList) in 15423.0473ms
+20:27:32 [INF] [LAPTOP-H914ANHF#10 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.AccountController.Register (MyBGList)'
+20:27:32 [INF] [LAPTOP-H914ANHF#10 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Account/Register?UserName=TestUser&Email=TestEmail&Password=TestPassword - 0 - 400 - application/problem+json;+charset=utf-8 15655.7041ms
+20:30:13 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+20:30:14 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+20:30:14 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+20:30:14 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+20:30:14 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+20:30:14 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+20:30:16 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+20:30:16 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 629.1944ms
+20:30:16 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+20:30:16 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+20:30:16 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 24.2436ms
+20:30:17 [INF] [LAPTOP-H914ANHF#14 ] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 295.8962ms
+20:30:17 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+20:30:17 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 417.3966ms
+20:30:58 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Account/Register application/json 82
+20:30:58 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] CORS policy execution successful.
+20:30:58 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.AccountController.Register (MyBGList)'
+20:30:58 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(MyBGList.DTO.RegisterDTO) on controller MyBGList.Controllers.AccountController (MyBGList).
+20:30:58 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+20:30:58 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executed action MyBGList.Controllers.AccountController.Register (MyBGList) in 578.5578ms
+20:30:58 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.AccountController.Register (MyBGList)'
+20:30:58 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Account/Register application/json 82 - 400 - application/problem+json;+charset=utf-8 837.8560ms
+20:31:32 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Account/Register application/json 92
+20:31:32 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] CORS policy execution successful.
+20:31:32 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.AccountController.Register (MyBGList)'
+20:31:32 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(MyBGList.DTO.RegisterDTO) on controller MyBGList.Controllers.AccountController (MyBGList).
+20:32:48 [WRN] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] User password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresDigit.
+20:33:45 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+20:33:45 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Executed action MyBGList.Controllers.AccountController.Register (MyBGList) in 133535.5195ms
+20:33:45 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.AccountController.Register (MyBGList)'
+20:33:45 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Account/Register application/json 92 - 500 - application/problem+json;+charset=utf-8 133568.2873ms
+20:34:36 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Account/Register application/json 105
+20:34:36 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] CORS policy execution successful.
+20:34:36 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.AccountController.Register (MyBGList)'
+20:34:36 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(MyBGList.DTO.RegisterDTO) on controller MyBGList.Controllers.AccountController (MyBGList).
+20:34:39 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+20:34:40 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Executed DbCommand (131ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+20:34:41 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Executed DbCommand (34ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+20:34:41 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] User TestUser (test-user@email.com) has been created.
+20:34:41 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'System.String'.
+20:34:41 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Executed action MyBGList.Controllers.AccountController.Register (MyBGList) in 5004.5213ms
+20:34:41 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.AccountController.Register (MyBGList)'
+20:34:41 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Account/Register application/json 105 - 201 - text/plain;+charset=utf-8 5108.9084ms
+21:48:35 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+21:48:35 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+21:48:35 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+21:48:35 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+21:48:35 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+21:48:35 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+21:48:38 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+21:48:38 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 703.0324ms
+21:48:38 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+21:48:38 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+21:48:38 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 29.9228ms
+21:48:39 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 219.0389ms
+21:48:39 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+21:48:39 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 500.6188ms
+21:57:17 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Account/Login application/json 71
+21:57:17 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] CORS policy execution successful.
+21:57:18 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.AccountController.Login (MyBGList)'
+21:57:18 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(MyBGList.DTO.LoginDTO) on controller MyBGList.Controllers.AccountController (MyBGList).
+21:57:21 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+21:57:22 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed DbCommand (170ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+21:57:23 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executing StatusCodeResult, setting HTTP status code 200
+21:57:23 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed action MyBGList.Controllers.AccountController.Login (MyBGList) in 5177.212ms
+21:57:23 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.AccountController.Login (MyBGList)'
+21:57:23 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Account/Login application/json 71 - 200 0 - 5968.4434ms
+21:58:19 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+21:58:20 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+21:58:20 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+21:58:20 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+21:58:20 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+21:58:20 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+21:58:21 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+21:58:22 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 575.3133ms
+21:58:22 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+21:58:22 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13752 application/javascript;+charset=utf-8 14.7398ms
+21:58:22 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+21:58:22 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 165.1148ms
+21:58:22 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+21:58:23 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 377.0615ms
+21:58:57 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Account/Login application/json 71
+21:58:57 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] CORS policy execution successful.
+21:58:58 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.AccountController.Login (MyBGList)'
+21:58:58 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(MyBGList.DTO.LoginDTO) on controller MyBGList.Controllers.AccountController (MyBGList).
+21:59:01 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+21:59:02 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executed DbCommand (130ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+21:59:03 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'System.String'.
+21:59:03 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executed action MyBGList.Controllers.AccountController.Login (MyBGList) in 4871.4169ms
+21:59:03 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.AccountController.Login (MyBGList)'
+21:59:03 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Account/Login application/json 71 - 200 - text/plain;+charset=utf-8 5174.7157ms

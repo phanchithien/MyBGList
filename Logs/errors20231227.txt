@@ -1,0 +1,18 @@
+10:54:12 [ERR] [LAPTOP-H914ANHF#14 ] An unhandled exception has occurred while executing the request.
+System.NotImplementedException: test 501
+   at Program.<>c.<<Main>$>b__0_8() in D:\My-repo\MyBGList\MyBGList\Program.cs:line 156
+   at lambda_method3(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+10:54:12 [ERR] [LAPTOP-H914ANHF#14 ] An unhandled exception occurred.test 501
+System.NotImplementedException: test 501
+   at Program.<>c.<<Main>$>b__0_8() in D:\My-repo\MyBGList\MyBGList\Program.cs:line 156
+   at lambda_method3(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)

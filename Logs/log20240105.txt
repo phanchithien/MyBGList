@@ -1,0 +1,345 @@
+16:30:01 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+16:30:03 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+16:30:03 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+16:30:03 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+16:30:03 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+16:30:03 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+16:30:04 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+16:30:05 [INF] [LAPTOP-H914ANHF#12 ] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 766.3771ms
+16:30:05 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+16:30:05 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13751 application/javascript;+charset=utf-8 23.4553ms
+16:30:05 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+16:30:05 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 277.5555ms
+16:30:05 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+16:30:06 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 809.8745ms
+16:47:31 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Account/Login application/json 80
+16:47:32 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] CORS policy execution successful.
+16:47:33 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.AccountController.Login (MyBGList)'
+16:47:34 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(MyBGList.DTO.LoginDTO) on controller MyBGList.Controllers.AccountController (MyBGList).
+16:47:37 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+16:47:38 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed DbCommand (151ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+16:47:38 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+16:47:39 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'System.String'.
+16:47:39 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Executed action MyBGList.Controllers.AccountController.Login (MyBGList) in 5498.5853ms
+16:47:39 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.AccountController.Login (MyBGList)'
+16:47:39 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Account/Login application/json 80 - 200 - text/plain;+charset=utf-8 7676.8012ms
+16:47:55 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Seed/AuthData - 0
+16:47:55 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] CORS policy execution successful.
+16:47:55 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.SeedController.AuthData (MyBGList)'
+16:47:55 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Route matched with {action = "AuthData", controller = "Seed"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthData() on controller MyBGList.Controllers.SeedController (MyBGList).
+16:47:55 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+16:47:55 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Executed DbCommand (24ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+16:47:56 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+16:47:56 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+16:47:56 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+16:47:56 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Executed DbCommand (11ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3);
+16:47:56 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+16:47:56 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed DbCommand (4ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+16:47:56 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+16:47:56 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+16:47:56 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+16:47:56 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+16:47:56 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed DbCommand (10ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+16:47:56 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executing JsonResult, writing value of type '<>f__AnonymousType2`2[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+16:47:56 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed action MyBGList.Controllers.SeedController.AuthData (MyBGList) in 741.6436ms
+16:47:56 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.SeedController.AuthData (MyBGList)'
+16:47:56 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Seed/AuthData - 0 - 200 - application/json;+charset=utf-8 966.6995ms
+16:48:39 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Seed/AuthData - 0
+16:48:39 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] CORS policy execution successful.
+16:48:39 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.SeedController.AuthData (MyBGList)'
+16:48:39 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Route matched with {action = "AuthData", controller = "Seed"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthData() on controller MyBGList.Controllers.SeedController (MyBGList).
+16:48:39 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+16:48:39 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+16:48:39 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+16:48:39 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Executed DbCommand (6ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+16:48:39 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+16:48:39 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+16:48:39 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+16:48:39 [INF] [LAPTOP-H914ANHF#17 .NET ThreadPool Worker] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+16:48:39 [INF] [LAPTOP-H914ANHF#9 .NET ThreadPool Worker] Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+16:48:39 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+16:48:43 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed DbCommand (80ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+16:49:23 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executing JsonResult, writing value of type '<>f__AnonymousType2`2[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+16:49:23 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed action MyBGList.Controllers.SeedController.AuthData (MyBGList) in 43526.3312ms
+16:49:23 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.SeedController.AuthData (MyBGList)'
+16:49:23 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Seed/AuthData - 0 - 200 - application/json;+charset=utf-8 43571.5686ms
+16:50:00 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Account/Register application/json 117
+16:50:00 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] CORS policy execution successful.
+16:50:00 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.AccountController.Register (MyBGList)'
+16:50:00 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(MyBGList.DTO.RegisterDTO) on controller MyBGList.Controllers.AccountController (MyBGList).
+16:50:01 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+16:50:01 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed DbCommand (27ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+16:50:01 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executed DbCommand (8ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+16:50:01 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] User TestSuperAdmin (test-superadmin@email.com) has been created.
+16:50:01 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'System.String'.
+16:50:01 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executed action MyBGList.Controllers.AccountController.Register (MyBGList) in 166.9012ms
+16:50:01 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.AccountController.Register (MyBGList)'
+16:50:01 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Account/Register application/json 117 - 201 - text/plain;+charset=utf-8 203.5150ms
+16:50:12 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Seed/AuthData - 0
+16:50:12 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] CORS policy execution successful.
+16:50:12 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.SeedController.AuthData (MyBGList)'
+16:50:12 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Route matched with {action = "AuthData", controller = "Seed"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthData() on controller MyBGList.Controllers.SeedController (MyBGList).
+16:50:12 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+16:50:12 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executed DbCommand (8ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+16:50:12 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+16:50:12 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+16:50:12 [INF] [LAPTOP-H914ANHF#17 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+16:50:12 [INF] [LAPTOP-H914ANHF#17 .NET ThreadPool Worker] Executed DbCommand (4ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+16:50:12 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+16:50:12 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+16:50:12 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+16:50:12 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+16:50:20 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+16:50:30 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+16:50:30 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executed DbCommand (11ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+16:50:30 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+16:50:30 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+16:50:30 [INF] [LAPTOP-H914ANHF#17 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+16:50:30 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+16:50:30 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+16:50:30 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executed DbCommand (14ms) [Parameters=[@p14='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+SELECT @@ROWCOUNT;
+16:50:30 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+16:50:30 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+16:50:30 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+16:50:30 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+16:50:30 [INF] [LAPTOP-H914ANHF#17 .NET ThreadPool Worker] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+16:50:30 [INF] [LAPTOP-H914ANHF#31 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@p14='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+SELECT @@ROWCOUNT;
+16:50:30 [INF] [LAPTOP-H914ANHF#32 .NET ThreadPool Worker] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+16:50:30 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+16:50:30 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executed DbCommand (11ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+16:50:30 [INF] [LAPTOP-H914ANHF#35 .NET ThreadPool Worker] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+16:50:30 [INF] [LAPTOP-H914ANHF#34 .NET ThreadPool Worker] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+16:50:30 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed DbCommand (2ms) [Parameters=[@p14='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+SELECT @@ROWCOUNT;
+16:50:30 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executing JsonResult, writing value of type '<>f__AnonymousType2`2[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+16:50:30 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed action MyBGList.Controllers.SeedController.AuthData (MyBGList) in 18151.9446ms
+16:50:30 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.SeedController.AuthData (MyBGList)'
+16:50:30 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Seed/AuthData - 0 - 200 - application/json;+charset=utf-8 18184.0730ms
+16:50:45 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request starting HTTP/2 POST https://localhost:55221/Account/Login application/json 77
+16:50:45 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] CORS policy execution successful.
+16:50:45 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.AccountController.Login (MyBGList)'
+16:50:45 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(MyBGList.DTO.LoginDTO) on controller MyBGList.Controllers.AccountController (MyBGList).
+16:50:45 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+16:50:45 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+16:50:45 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+16:50:45 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'System.String'.
+16:50:45 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executed action MyBGList.Controllers.AccountController.Login (MyBGList) in 50.1744ms
+16:50:45 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.AccountController.Login (MyBGList)'
+16:50:45 [INF] [LAPTOP-H914ANHF#30 .NET ThreadPool Worker] Request finished HTTP/2 POST https://localhost:55221/Account/Login application/json 77 - 200 - text/plain;+charset=utf-8 87.0068ms
+16:50:58 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/auth/test/3 - -
+16:50:58 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Executing endpoint 'HTTP: GET /auth/test/3'
+16:50:58 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Writing value of type 'System.String' with status code '200'.
+16:50:58 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Executed endpoint 'HTTP: GET /auth/test/3'
+16:50:58 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/auth/test/3 - - - 200 - application/json;+charset=utf-8 105.5405ms
+16:51:04 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/auth/test/4 - -
+16:51:04 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Executing endpoint 'HTTP: GET /auth/test/4'
+16:51:04 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Writing value of type 'System.String' with status code '200'.
+16:51:04 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Executed endpoint 'HTTP: GET /auth/test/4'
+16:51:04 [INF] [LAPTOP-H914ANHF#33 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/auth/test/4 - - - 200 - application/json;+charset=utf-8 25.7741ms
+21:38:01 [INF] [LAPTOP-H914ANHF#1 ] User profile is available. Using 'C:\Users\thien\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+21:38:02 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+21:38:02 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+21:38:02 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+21:38:02 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+21:38:02 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+21:38:03 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+21:38:04 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 899.6676ms
+21:38:04 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+21:38:04 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13751 application/javascript;+charset=utf-8 24.1415ms
+21:38:04 [INF] [LAPTOP-H914ANHF#10 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+21:38:05 [INF] [LAPTOP-H914ANHF#10 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 188.1718ms
+21:38:05 [INF] [LAPTOP-H914ANHF#10 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+21:38:06 [INF] [LAPTOP-H914ANHF#10 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 659.7102ms
+21:42:37 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/BoardGames/30 - -
+21:42:38 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] No cached response available for this request.
+21:42:38 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.BoardGamesController.GetBoardGame (MyBGList)'
+21:42:38 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] Route matched with {action = "GetBoardGame", controller = "BoardGames"}. Executing controller action with signature System.Threading.Tasks.Task`1[MyBGList.DTO.RestDTO`1[MyBGList.Models.BoardGame]] GetBoardGame(Int32) on controller MyBGList.Controllers.BoardGamesController (MyBGList).
+21:42:39 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] GetBoardGame method started.
+21:42:41 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+21:42:43 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] Executed DbCommand (211ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[BGGRank], [b].[ComplexityAverage], [b].[CreatedDate], [b].[LastModifiedDate], [b].[MaxPlayers], [b].[MinAge], [b].[MinPlayers], [b].[Name], [b].[OwnedUsers], [b].[PlayTime], [b].[RatingAverage], [b].[UsersRated], [b].[Year]
+FROM [BoardGames] AS [b]
+WHERE [b].[Id] = @__id_0
+21:42:43 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'MyBGList.DTO.RestDTO`1[[MyBGList.Models.BoardGame, MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+21:42:43 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] Executed action MyBGList.Controllers.BoardGamesController.GetBoardGame (MyBGList) in 5112.0257ms
+21:42:43 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.BoardGamesController.GetBoardGame (MyBGList)'
+21:42:43 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] The response has been cached.
+21:42:43 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/BoardGames/30 - - - 200 - application/json;+charset=utf-8 5968.6906ms

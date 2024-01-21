@@ -1,0 +1,153 @@
+09:03:25 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+09:03:25 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+09:03:25 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+09:03:25 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+09:03:25 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+09:03:26 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+09:03:27 [INF] [LAPTOP-H914ANHF#8 ] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 810.2027ms
+09:03:27 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+09:03:27 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13751 application/javascript;+charset=utf-8 8.9652ms
+09:03:27 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+09:03:27 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 180.0372ms
+09:03:27 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+09:03:28 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 751.6164ms
+09:03:34 [INF] [LAPTOP-H914ANHF#15 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/cache/test/1 - -
+09:03:34 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Executing endpoint 'HTTP: GET /cache/test/1'
+09:03:34 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Executing result with status code '200'.
+09:03:34 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Executed endpoint 'HTTP: GET /cache/test/1'
+09:03:34 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/cache/test/1 - - - 200 0 - 87.9863ms
+09:03:34 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/favicon.ico - -
+09:03:34 [INF] [LAPTOP-H914ANHF#6 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/favicon.ico - - - 404 0 - 0.7794ms
+09:03:42 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/cache/test/1 - -
+09:03:42 [INF] [LAPTOP-H914ANHF#9 ] Executing endpoint 'HTTP: GET /cache/test/1'
+09:03:42 [INF] [LAPTOP-H914ANHF#9 ] Executing result with status code '200'.
+09:03:42 [INF] [LAPTOP-H914ANHF#9 ] Executed endpoint 'HTTP: GET /cache/test/1'
+09:03:42 [INF] [LAPTOP-H914ANHF#9 ] Request finished HTTP/2 GET https://localhost:55221/cache/test/1 - - - 200 0 - 10.2053ms
+09:04:01 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/cache/test/2 - -
+09:04:01 [INF] [LAPTOP-H914ANHF#14 ] Executing endpoint 'HTTP: GET /cache/test/2'
+09:04:01 [INF] [LAPTOP-H914ANHF#14 ] Executing result with status code '200'.
+09:04:01 [INF] [LAPTOP-H914ANHF#14 ] Executed endpoint 'HTTP: GET /cache/test/2'
+09:04:01 [INF] [LAPTOP-H914ANHF#14 ] Request finished HTTP/2 GET https://localhost:55221/cache/test/2 - - - 200 0 - 10.4490ms
+09:04:51 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/boardgames - -
+09:04:51 [INF] [LAPTOP-H914ANHF#20 ] Executing endpoint 'MyBGList.Controllers.BoardGamesController.Get (MyBGList)'
+09:04:51 [INF] [LAPTOP-H914ANHF#20 ] Route matched with {action = "Get", controller = "BoardGames"}. Executing controller action with signature System.Threading.Tasks.Task`1[MyBGList.DTO.RestDTO`1[MyBGList.Models.BoardGame[]]] Get(MyBGList.DTO.RequestDTO`1[MyBGList.DTO.BoardGameDTO]) on controller MyBGList.Controllers.BoardGamesController (MyBGList).
+09:04:53 [INF] [LAPTOP-H914ANHF#20 ] Get method started.
+09:04:54 [INF] [LAPTOP-H914ANHF#20 ] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+09:04:55 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BoardGames] AS [b]
+09:05:01 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Executed DbCommand (77ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BGGRank], [b].[ComplexityAverage], [b].[CreatedDate], [b].[LastModifiedDate], [b].[MaxPlayers], [b].[MinAge], [b].[MinPlayers], [b].[Name], [b].[OwnedUsers], [b].[PlayTime], [b].[RatingAverage], [b].[UsersRated], [b].[Year]
+FROM [BoardGames] AS [b]
+ORDER BY [b].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+09:05:01 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'MyBGList.DTO.RestDTO`1[[MyBGList.Models.BoardGame[], MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+09:05:01 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Executed action MyBGList.Controllers.BoardGamesController.Get (MyBGList) in 9914.4974ms
+09:05:01 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.BoardGamesController.Get (MyBGList)'
+09:05:01 [INF] [LAPTOP-H914ANHF#21 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/boardgames - - - 200 - application/json;+charset=utf-8 10043.1942ms
+10:47:32 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+10:47:33 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+10:47:33 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+10:47:33 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+10:47:33 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+10:47:33 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+10:47:34 [INF] [LAPTOP-H914ANHF#8 ] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 410.5109ms
+10:47:34 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+10:47:34 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13751 application/javascript;+charset=utf-8 17.5706ms
+10:47:34 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+10:47:34 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 122.7704ms
+10:47:34 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+10:47:34 [INF] [LAPTOP-H914ANHF#13 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 384.1150ms
+10:48:02 [INF] [LAPTOP-H914ANHF#7 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/boardgames - -
+10:48:02 [INF] [LAPTOP-H914ANHF#15 ] Executing endpoint 'MyBGList.Controllers.BoardGamesController.Get (MyBGList)'
+10:48:02 [INF] [LAPTOP-H914ANHF#15 ] Route matched with {action = "Get", controller = "BoardGames"}. Executing controller action with signature System.Threading.Tasks.Task`1[MyBGList.DTO.RestDTO`1[MyBGList.Models.BoardGame[]]] Get(MyBGList.DTO.RequestDTO`1[MyBGList.DTO.BoardGameDTO]) on controller MyBGList.Controllers.BoardGamesController (MyBGList).
+10:48:04 [INF] [LAPTOP-H914ANHF#15 ] Get method started.
+10:48:05 [INF] [LAPTOP-H914ANHF#15 ] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+10:48:05 [INF] [LAPTOP-H914ANHF#18 .NET ThreadPool Worker] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BoardGames] AS [b]
+10:48:12 [INF] [LAPTOP-H914ANHF#18 .NET ThreadPool Worker] Executed DbCommand (85ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BGGRank], [b].[ComplexityAverage], [b].[CreatedDate], [b].[LastModifiedDate], [b].[MaxPlayers], [b].[MinAge], [b].[MinPlayers], [b].[Name], [b].[OwnedUsers], [b].[PlayTime], [b].[RatingAverage], [b].[UsersRated], [b].[Year]
+FROM [BoardGames] AS [b]
+ORDER BY [b].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+10:48:12 [INF] [LAPTOP-H914ANHF#18 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'MyBGList.DTO.RestDTO`1[[MyBGList.Models.BoardGame[], MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+10:48:12 [INF] [LAPTOP-H914ANHF#18 .NET ThreadPool Worker] Executed action MyBGList.Controllers.BoardGamesController.Get (MyBGList) in 9462.4023ms
+10:48:12 [INF] [LAPTOP-H914ANHF#18 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.BoardGamesController.Get (MyBGList)'
+10:48:12 [INF] [LAPTOP-H914ANHF#18 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/boardgames - - - 200 - application/json;+charset=utf-8 9584.3507ms
+21:36:26 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: https://localhost:55221
+21:36:26 [INF] [LAPTOP-H914ANHF#1 ] Now listening on: http://localhost:55222
+21:36:26 [INF] [LAPTOP-H914ANHF#1 ] Application started. Press Ctrl+C to shut down.
+21:36:26 [INF] [LAPTOP-H914ANHF#1 ] Hosting environment: Development
+21:36:26 [INF] [LAPTOP-H914ANHF#1 ] Content root path: D:\My-repo\MyBGList\MyBGList\
+21:36:27 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/index.html - -
+21:36:28 [INF] [LAPTOP-H914ANHF#16 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/index.html - - - 200 - text/html;charset=utf-8 922.6755ms
+21:36:28 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - -
+21:36:28 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_framework/aspnetcore-browser-refresh.js - - - 200 13751 application/javascript;+charset=utf-8 40.7753ms
+21:36:29 [INF] [LAPTOP-H914ANHF#4 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/_vs/browserLink - -
+21:36:29 [INF] [LAPTOP-H914ANHF#10 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 153.7527ms
+21:36:30 [INF] [LAPTOP-H914ANHF#10 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - -
+21:36:30 [INF] [LAPTOP-H914ANHF#10 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 681.4763ms
+21:56:15 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/BoardGames?PageIndex=0&PageSize=10&SortColumn=Name&SortOrder=ASC - -
+21:56:15 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] No cached response available for this request.
+21:56:15 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.BoardGamesController.Get (MyBGList)'
+21:56:15 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] Route matched with {action = "Get", controller = "BoardGames"}. Executing controller action with signature System.Threading.Tasks.Task`1[MyBGList.DTO.RestDTO`1[MyBGList.Models.BoardGame[]]] Get(MyBGList.DTO.RequestDTO`1[MyBGList.DTO.BoardGameDTO]) on controller MyBGList.Controllers.BoardGamesController (MyBGList).
+21:56:17 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] Get method started.
+21:56:19 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+21:56:20 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] Executed DbCommand (85ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BoardGames] AS [b]
+21:57:22 [INF] [LAPTOP-H914ANHF#22 .NET ThreadPool Worker] Executed DbCommand (112ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BGGRank], [b].[ComplexityAverage], [b].[CreatedDate], [b].[LastModifiedDate], [b].[MaxPlayers], [b].[MinAge], [b].[MinPlayers], [b].[Name], [b].[OwnedUsers], [b].[PlayTime], [b].[RatingAverage], [b].[UsersRated], [b].[Year]
+FROM [BoardGames] AS [b]
+ORDER BY [b].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+21:57:22 [INF] [LAPTOP-H914ANHF#22 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'MyBGList.DTO.RestDTO`1[[MyBGList.Models.BoardGame[], MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+21:57:22 [INF] [LAPTOP-H914ANHF#22 .NET ThreadPool Worker] Executed action MyBGList.Controllers.BoardGamesController.Get (MyBGList) in 66754.8028ms
+21:57:22 [INF] [LAPTOP-H914ANHF#22 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.BoardGamesController.Get (MyBGList)'
+21:57:22 [INF] [LAPTOP-H914ANHF#22 .NET ThreadPool Worker] The response has been cached.
+21:57:22 [INF] [LAPTOP-H914ANHF#22 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/BoardGames?PageIndex=0&PageSize=10&SortColumn=Name&SortOrder=ASC - - - 200 - application/json;+charset=utf-8 67341.8530ms
+21:57:57 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/boardgames - -
+21:57:57 [INF] [LAPTOP-H914ANHF#23 ] Serving response from cache.
+21:57:57 [INF] [LAPTOP-H914ANHF#23 ] Request finished HTTP/2 GET https://localhost:55221/boardgames - - - 200 3737 application/json;+charset=utf-8 46.2010ms
+21:57:57 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/favicon.ico - -
+21:57:57 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] No cached response available for this request.
+21:57:57 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] The response could not be cached for this request.
+21:57:57 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/favicon.ico - - - 404 0 - 14.1373ms
+21:58:02 [INF] [LAPTOP-H914ANHF#14 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/boardgames - -
+21:58:02 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executing endpoint 'MyBGList.Controllers.BoardGamesController.Get (MyBGList)'
+21:58:02 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Route matched with {action = "Get", controller = "BoardGames"}. Executing controller action with signature System.Threading.Tasks.Task`1[MyBGList.DTO.RestDTO`1[MyBGList.Models.BoardGame[]]] Get(MyBGList.DTO.RequestDTO`1[MyBGList.DTO.BoardGameDTO]) on controller MyBGList.Controllers.BoardGamesController (MyBGList).
+21:58:02 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Get method started.
+21:58:02 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+21:58:02 [INF] [LAPTOP-H914ANHF#25 .NET ThreadPool Worker] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BoardGames] AS [b]
+21:58:34 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] Executed DbCommand (63ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BGGRank], [b].[ComplexityAverage], [b].[CreatedDate], [b].[LastModifiedDate], [b].[MaxPlayers], [b].[MinAge], [b].[MinPlayers], [b].[Name], [b].[OwnedUsers], [b].[PlayTime], [b].[RatingAverage], [b].[UsersRated], [b].[Year]
+FROM [BoardGames] AS [b]
+ORDER BY [b].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+21:58:34 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'MyBGList.DTO.RestDTO`1[[MyBGList.Models.BoardGame[], MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+21:58:34 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] Executed action MyBGList.Controllers.BoardGamesController.Get (MyBGList) in 32170.1164ms
+21:58:34 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.BoardGamesController.Get (MyBGList)'
+21:58:34 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] The response has been cached.
+21:58:34 [INF] [LAPTOP-H914ANHF#20 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/boardgames - - - 200 - application/json;+charset=utf-8 32213.2717ms
+21:58:34 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/favicon.ico - -
+21:58:34 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] The response could not be cached for this request.
+21:58:34 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/favicon.ico - - - 404 0 - 6.8051ms
+21:58:39 [INF] [LAPTOP-H914ANHF#12 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/boardgames - -
+21:58:39 [INF] [LAPTOP-H914ANHF#15 ] Executing endpoint 'MyBGList.Controllers.BoardGamesController.Get (MyBGList)'
+21:58:39 [INF] [LAPTOP-H914ANHF#15 ] Route matched with {action = "Get", controller = "BoardGames"}. Executing controller action with signature System.Threading.Tasks.Task`1[MyBGList.DTO.RestDTO`1[MyBGList.Models.BoardGame[]]] Get(MyBGList.DTO.RequestDTO`1[MyBGList.DTO.BoardGameDTO]) on controller MyBGList.Controllers.BoardGamesController (MyBGList).
+21:58:39 [INF] [LAPTOP-H914ANHF#15 ] Get method started.
+21:58:39 [INF] [LAPTOP-H914ANHF#15 ] Entity Framework Core 6.0.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+21:58:39 [INF] [LAPTOP-H914ANHF#17 .NET ThreadPool Worker] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BoardGames] AS [b]
+21:58:41 [INF] [LAPTOP-H914ANHF#17 .NET ThreadPool Worker] Executing ObjectResult, writing value of type 'MyBGList.DTO.RestDTO`1[[MyBGList.Models.BoardGame[], MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+21:58:41 [INF] [LAPTOP-H914ANHF#17 .NET ThreadPool Worker] Executed action MyBGList.Controllers.BoardGamesController.Get (MyBGList) in 1688.4444ms
+21:58:41 [INF] [LAPTOP-H914ANHF#17 .NET ThreadPool Worker] Executed endpoint 'MyBGList.Controllers.BoardGamesController.Get (MyBGList)'
+21:58:41 [INF] [LAPTOP-H914ANHF#17 .NET ThreadPool Worker] The response has been cached.
+21:58:41 [INF] [LAPTOP-H914ANHF#17 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/boardgames - - - 200 - application/json;+charset=utf-8 1726.1569ms
+21:58:41 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request starting HTTP/2 GET https://localhost:55221/favicon.ico - -
+21:58:41 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] The response could not be cached for this request.
+21:58:41 [INF] [LAPTOP-H914ANHF#24 .NET ThreadPool Worker] Request finished HTTP/2 GET https://localhost:55221/favicon.ico - - - 404 0 - 7.7473ms

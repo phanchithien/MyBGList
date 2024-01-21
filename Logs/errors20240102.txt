@@ -1,0 +1,6 @@
+15:08:46 [ERR] [LAPTOP-H914ANHF#1 ] Failed executing DbCommand (233ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [BoardGames] ADD CONSTRAINT [FK_BoardGames_Publishers_PublisherId] FOREIGN KEY ([PublisherId]) REFERENCES [Publishers] ([Id]) ON DELETE CASCADE;
+15:10:35 [ERR] [LAPTOP-H914ANHF#1 ] Failed executing DbCommand (170ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [BoardGames] ADD CONSTRAINT [FK_BoardGames_Publishers_PublisherId] FOREIGN KEY ([PublisherId]) REFERENCES [Publishers] ([Id]) ON DELETE CASCADE;
+15:17:07 [ERR] [LAPTOP-H914ANHF#1 ] Failed executing DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [Publishers];
